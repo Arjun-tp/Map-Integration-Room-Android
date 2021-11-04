@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="71dp"
+        android:text="MAP DETAILS"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/extTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/extTitle"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Enter the Location"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="85dp"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/extSubTitle"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter the subtitle"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:text="Latitude"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extSubTitle" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Longitude"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extLatitude" />
+
+    <EditText
+        android:id="@+id/extLongitude"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:hint="Enter the Longitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/extLatitude"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Enter the Latitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="Sub-Title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extTitle" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="72dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="35dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="35dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="38dp"
+        android:textAlignment="viewStart"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/ic_delete_forever"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
